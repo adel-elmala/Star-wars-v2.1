@@ -1,0 +1,20 @@
+<div class="container">
+
+  <h3 style="color:green" id="planetstitle">planets</h3>
+
+  <div class="card" ng-repeat="z in planetsdata">
+        <!--  heading-->
+     <div class="card-header" role="tab" >
+       <h5  class="mb-0">{{z.name}}</h5>
+     </div>
+         <!--  content-->
+     <div class="card-body" >
+       <h6><span>Gravity: </span>{{z.gravity}}</h6>
+       <h6><span>Population: </span>{{z.population}}</h6>
+       <h6><span>Surface water: </span>{{z.surface_water}}</h6>
+       <h6><span>Terrain: </span>{{z.terrain}}</h6>
+       <h6 ><span>Films: </span>{{z.films}}</h6>
+     </div>
+ </div>
+ <button type="button" class="btn btn-success btn-lg btn-block" onclick="next()">Next</button>
+</div>

@@ -1,0 +1,19 @@
+<div class="container">
+  <h3 style="color:green" id="filmstitle">films</h3>
+
+    <div class="card" ng-repeat="w in filmdata">
+          <!--  heading-->
+     <div class="card-header" role="tab" >
+       <h5  class="mb-0">{{w.title}}</h5>
+     </div>
+         <!--  content-->
+     <div class="card-body" >
+       <h6><span>Director: </span>{{w.director}}</h6>
+       <h6><span>producer: </span>{{w.producer}}</h6>
+       <h6><span>Date: </span>{{w.created}}</h6>
+       <h6><span>characters: </span>{{w.characters}}</h6>
+       <h6><span>Starships: </span>{{w.starships}}</h6>
+     </div>
+   </div>
+
+</div>

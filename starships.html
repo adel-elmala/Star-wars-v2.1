@@ -1,0 +1,22 @@
+<div class="container">
+  <h3 style="color:green" id="starshipstitle">starships</h3>
+  <div class="row">
+    <div  ng-repeat="y in starshipdata" class="col-md-6 col-sm-6">
+      <!--  heading-->
+       <div class="card-header" role="tab" >
+         <h5  class="mb-0">{{y.name}}</h5>
+       </div>
+       <!-- content -->
+       <div class="card-body" >
+         <h6><span>Manufacturer: </span> {{y.manufacturer}}</h6>
+         <h6><span>Cost: </span>{{y.cost_in_credits}}</h6>
+         <h6><span>Cargo capacity: </span>{{y.cargo_capacity}}</h6>
+         <h6><span>Passengers: </span> {{y.passengers}}</h6>
+         <h6 ><span>Films: </span> {{y.films}}</h6>
+       </div>
+   </div>
+
+  </div>
+
+ <button type="button" class="btn btn-success btn-lg btn-block">Next</button>
+</div>
